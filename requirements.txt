@@ -1,0 +1,12 @@
+flask>=3.0.0
+requests>=2.31.0
+numpy>=1.24.0
+python-dotenv>=1.0.0
+edge-tts>=7.0.0
+gunicorn>=21.2.0
+SpeechRecognition>=3.10.0
+# Optional for local Whisper and local sentence transformers:
+# openai-whisper
+# sentence-transformers
+# faiss-cpu
+# pyttsx3

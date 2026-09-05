@@ -1,0 +1,559 @@
+{
+  "domains": [
+    {
+      "id": "jee_mhtcet",
+      "name": "JEE & MHT-CET",
+      "icon": "⚡",
+      "color": "#00F2FE",
+      "description": "Joint Entrance Exam, MHT-CET syllabus, cutoffs, marking & counseling"
+    },
+    {
+      "id": "nda",
+      "name": "NDA & Defence",
+      "icon": "🎖️",
+      "color": "#FF7A00",
+      "description": "National Defence Academy eligibility, SSB interview, physical tests & training"
+    },
+    {
+      "id": "college_admissions",
+      "name": "College Admissions",
+      "icon": "🎓",
+      "color": "#9D4EDD",
+      "description": "Counseling procedures, seat matrix, branch selection, scholarships & cutoffs"
+    },
+    {
+      "id": "tech_careers",
+      "name": "Companies & Careers",
+      "icon": "💼",
+      "color": "#00F5A0",
+      "description": "Tech placements, system design rounds, coding prep, CTC & referral tips"
+    },
+    {
+      "id": "customer_support",
+      "name": "Customer & SaaS Support",
+      "icon": "🎧",
+      "color": "#FF007A",
+      "description": "API keys, rate limits, enterprise billing, webhooks & SDK integrations"
+    },
+    {
+      "id": "medical_neet",
+      "name": "Medical & NEET",
+      "icon": "🩺",
+      "color": "#06D6A0",
+      "description": "NEET UG eligibility, MBBS admissions, syllabus, cutoffs & counseling"
+    },
+    {
+      "id": "upsc_civil",
+      "name": "UPSC & Civil Services",
+      "icon": "🏛️",
+      "color": "#E76F51",
+      "description": "IAS/IPS exam stages, Prelims, Mains, Optional subjects & interview"
+    },
+    {
+      "id": "universal_ai",
+      "name": "Universal & General Knowledge",
+      "icon": "🌐",
+      "color": "#3A86FF",
+      "description": "AI systems, science, technology, finance & any custom domain inquiry"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq_jee_01",
+      "domain": "jee_mhtcet",
+      "language": "en",
+      "question": "What is JEE and what is the difference between JEE Main and JEE Advanced?",
+      "keywords": [
+        "jee",
+        "main",
+        "advanced",
+        "difference",
+        "engineering",
+        "iit",
+        "nit",
+        "eligibility"
+      ],
+      "answer": "JEE (Joint Entrance Examination) is India's premier multi-tier engineering entrance exam for admission into top-ranked national engineering institutions. JEE Main is conducted twice a year by the National Testing Agency (NTA) in January and April. It serves two distinct purposes: first, it is the direct admission gateway for 32 National Institutes of Technology (NITs), 26 Indian Institutes of Information Technology (IIITs), and dozens of Centrally Funded Technical Institutes (CFTIs). Second, it serves as the strict screening test for JEE Advanced; only the top 2.5 lakh rank-holders in JEE Main qualify to appear for JEE Advanced. JEE Advanced is organized rotationally by one of the older IITs and is the exclusive examination for admissions into all 23 Indian Institutes of Technology (IITs). While JEE Main emphasizes speed, broad syllabus coverage, and accurate formula application across Physics, Chemistry, and Mathematics, JEE Advanced features multi-correct questions, comprehension passages, and integer-type numerical problems designed to test deep conceptual mastery and analytical problem-solving under strict time constraints.",
+      "concise_summary": "JEE Main is conducted by NTA for admission into NITs, IIITs, and CFTIs, and screens the top 2.5 lakh candidates for JEE Advanced, which is the exclusive entrance examination for the 23 IITs.",
+      "category": "Exam Structure",
+      "hit_count": 142
+    },
+    {
+      "id": "faq_jee_02",
+      "domain": "jee_mhtcet",
+      "language": "en",
+      "question": "What is MHT-CET and who conducts it?",
+      "keywords": [
+        "mht cet",
+        "maharashtra",
+        "cet cell",
+        "engineering admission",
+        "eligibility",
+        "coep",
+        "vjti"
+      ],
+      "answer": "MHT-CET stands for the Maharashtra Common Entrance Test, an annual state-level computer-based examination organized by the State Common Entrance Test Cell under the Government of Maharashtra. It is the primary admission gateway for undergraduate degree courses in Engineering and Technology (B.Tech/B.E.), Pharmacy (B.Pharm), and Agricultural Sciences across government, autonomous, and private institutions in Maharashtra. The engineering exam evaluates Physics, Chemistry, and Mathematics based predominantly on the Maharashtra State Board Class 12 syllabus with approximately 20% weightage given to foundational Class 11 concepts. Importantly, MHT-CET does not have negative marking, and the Mathematics section carries 2 marks per question compared to 1 mark for Physics and Chemistry. A high percentile (typically 99.2+ percentile) in MHT-CET unlocks admissions to prestigious engineering institutions such as College of Engineering Pune (COEP Technological University), Veermata Jijabai Technological Institute (VJTI) Mumbai, and Sardar Patel Institute of Technology (SPIT) Mumbai through the centralized Centralized Admission Process (CAP rounds).",
+      "concise_summary": "MHT-CET is Maharashtra's state-level entrance test for admissions into engineering and pharmacy colleges including COEP and VJTI, featuring no negative marking and 2-mark Mathematics questions.",
+      "category": "Eligibility & Pattern",
+      "hit_count": 98
+    },
+    {
+      "id": "faq_jee_03",
+      "domain": "jee_mhtcet",
+      "language": "en",
+      "question": "What is the marking scheme and exam pattern for JEE Main 2026?",
+      "keywords": [
+        "marking scheme",
+        "negative marking",
+        "jee main marks",
+        "exam pattern",
+        "questions",
+        "total marks"
+      ],
+      "answer": "The JEE Main Paper 1 (for B.E./B.Tech) comprises a total of 300 marks and has a duration of 3 hours. The exam is divided equally across three subjects: Physics, Chemistry, and Mathematics, each contributing 100 marks. Each subject consists of two sections: Section A contains 20 compulsory Multiple Choice Questions (MCQs) with a single correct option. Section B contains 10 Numerical Value questions, of which candidates are required to attempt any 5. The marking scheme awards +4 marks for every correct answer across both Section A and Section B. Crucially, negative marking of -1 mark applies to all incorrect responses in both MCQs and Numerical Value questions, meaning wild guessing carries severe risks. Unattempted questions earn 0 marks. To achieve a 99+ percentile, candidates typically target a net raw score of 180 to 210+ marks out of 300 depending on the relative difficulty level and normalization of the exam shift.",
+      "concise_summary": "JEE Main has 300 total marks across Physics, Chemistry, and Math. Correct answers earn +4 marks, while incorrect answers in both MCQs and numerical questions deduct -1 mark.",
+      "category": "Exam Structure",
+      "hit_count": 115
+    },
+    {
+      "id": "faq_jee_04",
+      "domain": "jee_mhtcet",
+      "language": "en",
+      "question": "What percentile is required in JEE Main for top NIT Computer Science?",
+      "keywords": [
+        "percentile",
+        "top nit",
+        "computer science",
+        "cutoff",
+        "safe score",
+        "nit trichy",
+        "surathkal",
+        "warangal"
+      ],
+      "answer": "Securing Computer Science and Engineering (CSE) in top-tier National Institutes of Technology is intensely competitive. For open/general category candidates, securing CSE at the tier-1 'trinity' — NIT Trichy, NIT Surathkal, and NIT Warangal — generally requires an All India Rank (AIR) within the top 1,500 to 2,800, translating to a 99.75 to 99.9+ percentile (roughly 225 to 250+ marks out of 300 depending on session difficulty). Tier-1.5 NITs like NIT Rourkela, NIT Calicut, MNNIT Allahabad, and VNIT Nagpur typically close their general category CSE cutoffs between 99.1 and 99.6 percentile (ranks 3,500 to 8,000). For state home-quota candidates, cutoffs can relax slightly by 0.3 to 0.8 percentile. Candidates from reserved categories (OBC-NCL, EWS, SC, ST) benefit from dedicated seat categories, where competitive CSE cutoffs range from 95 to 98.5+ percentile.",
+      "concise_summary": "Top NIT CSE (Trichy, Surathkal, Warangal) requires a 99.75+ percentile (AIR under 2,500), while other leading NITs like Calicut, Rourkela, and Allahabad require 99.1 to 99.6 percentile.",
+      "category": "Cutoffs",
+      "hit_count": 184
+    },
+    {
+      "id": "faq_nda_01",
+      "domain": "nda",
+      "language": "en",
+      "question": "What is NDA and what are the primary eligibility criteria?",
+      "keywords": [
+        "nda",
+        "national defence academy",
+        "eligibility",
+        "age limit",
+        "qualification",
+        "army",
+        "navy",
+        "air force"
+      ],
+      "answer": "The National Defence Academy (NDA) in Khadakwasla, Pune, is India's premier joint services training academy where cadettes of the Indian Army, Indian Navy, and Indian Air Force train together before progressing to their respective pre-commission service academies. The Union Public Service Commission (UPSC) conducts the NDA exam twice annually (NDA I in April and NDA II in September). Candidates must be unmarried citizens of India aged between 16.5 and 19.5 years at the time of commencement of the course. Regarding academic qualifications: for the Army wing, candidates must have passed or be appearing in the 12th standard examination from any recognized board in any educational stream. For the Air Force and Naval wings, passing Class 12 with Physics, Chemistry, and Mathematics is strictly mandatory. Additionally, candidates must satisfy rigorous medical fitness and physical height standards (minimum 157 cm for Army and Air Force; 152 cm for female cadettes with specific allowances for candidates from Gorkha and hilly regions).",
+      "concise_summary": "NDA is India's joint tri-service training academy. Candidates must be unmarried, aged 16.5 to 19.5, with Class 12 pass (any stream for Army; Physics and Math compulsory for Navy and Air Force).",
+      "category": "Eligibility",
+      "hit_count": 210
+    },
+    {
+      "id": "faq_nda_02",
+      "domain": "nda",
+      "language": "en",
+      "question": "How does the NDA selection process work from written exam to SSB?",
+      "keywords": [
+        "nda selection process",
+        "ssb interview",
+        "stages",
+        "written exam",
+        "upsc",
+        "medical board",
+        "merit list"
+      ],
+      "answer": "The NDA selection pipeline is comprehensive and renowned for its rigorous evaluation of mental, intellectual, and physical aptitude. Stage 1 is the UPSC Written Examination (900 marks total), comprising Paper 1: Mathematics (300 marks, 120 questions, 2.5 hours) and Paper 2: General Ability Test or GAT (600 marks, 150 questions, 2.5 hours covering English, Physics, Chemistry, General Science, History, Geography, and Current Affairs). Candidates who secure the minimum qualifying cutoff in each paper and meet the overall aggregate written cutoff are called for Stage 2: the 5-Day Services Selection Board (SSB) Interview (900 marks) conducted at Army, Navy, or Air Force selection centers. The SSB evaluates Officer Like Qualities (OLQs) through psychological evaluations, group obstacle tasks, and personal interviews. Candidates recommended by the SSB undergo Stage 3: an extensive 3 to 5 day Medical Board Examination at military hospitals. Finally, an All India Merit List is prepared by aggregating the written score (900) and SSB score (900) out of 1800 marks to allocate academy seats.",
+      "concise_summary": "Selection involves a 900-mark UPSC written exam (Math & General Ability), followed by a 5-day 900-mark SSB interview, military medical board tests, and an aggregate 1800-mark merit list.",
+      "category": "Selection Process",
+      "hit_count": 167
+    },
+    {
+      "id": "faq_nda_03",
+      "domain": "nda",
+      "language": "en",
+      "question": "What happens during the 5-day SSB interview at NDA?",
+      "keywords": [
+        "ssb 5 days",
+        "screening",
+        "psychology test",
+        "gto",
+        "conference",
+        "tat",
+        "wat",
+        "srt",
+        "ppdt"
+      ],
+      "answer": "The Services Selection Board (SSB) interview is a five-day behavioral assessment designed to gauge whether a candidate possesses the 15 Officer Like Qualities (OLQs). Day 1 is the Screening Stage: candidates undergo Officer Intelligence Rating (OIR) verbal and non-verbal tests, followed by the Picture Perception and Description Test (PPDT) where they write a story based on a hazy picture and participate in group discussions. Only screened-in candidates stay for Days 2 through 5. Day 2 is the Psychology Test Battery: candidates complete the Thematic Apperception Test (TAT: 12 picture stories), Word Association Test (WAT: 60 words, 15 seconds each), Situation Reaction Test (SRT: 60 real-life dilemmas in 30 minutes), and a detailed Self-Description Test (SDT). Days 3 & 4 involve Group Testing Officer (GTO) outdoor tasks: Progressive Group Task (PGT), Half Group Task (HGT), Group Obstacle Race (Snake Race), Individual Obstacles, Command Task, Lecturette, and Final Group Task. Concurrently, a one-on-one Personal Interview is conducted by the Interviewing Officer (IO). Day 5 culminates in the Board Conference, where all assessors convene to review performance and declare final recommendations.",
+      "concise_summary": "Day 1 is Screening (OIR and PPDT); Day 2 is Psychological testing (TAT, WAT, SRT, SDT); Days 3 & 4 are GTO ground obstacle tasks and personal interview; Day 5 is the final Board Conference.",
+      "category": "SSB Interview",
+      "hit_count": 133
+    },
+    {
+      "id": "faq_nda_04",
+      "domain": "nda",
+      "language": "en",
+      "question": "Can women apply for the NDA examination?",
+      "keywords": [
+        "nda women",
+        "female candidates",
+        "girls nda",
+        "eligibility women",
+        "training",
+        "khadakwasla"
+      ],
+      "answer": "Yes, women candidates are fully eligible to apply for the NDA examination following the historic Supreme Court judgment in 2021. Female applicants must meet the same age criteria (16.5 to 19.5 years) and academic eligibility requirements as male candidates. Women cadettes are inducted across the Army, Navy, and Air Force wings and undergo the same comprehensive three-year physical conditioning, drill, weapon training, academic degree coursework (B.A., B.Sc., or B.Tech), and leadership curriculum at NDA Khadakwasla. Following graduation, they proceed to pre-commission academies like IMA Dehradun, INA Ezhimala, or AFA Dundigal to be commissioned as permanent commissioned officers in the Indian Armed Forces.",
+      "concise_summary": "Yes, female candidates are fully eligible for NDA under the same academic and age criteria, training alongside male cadettes at Khadakwasla to become commissioned officers.",
+      "category": "Eligibility",
+      "hit_count": 89
+    },
+    {
+      "id": "faq_adm_01",
+      "domain": "college_admissions",
+      "language": "en",
+      "question": "How does JoSAA and CSAB counseling work for engineering colleges?",
+      "keywords": [
+        "josaa",
+        "csab",
+        "counseling rounds",
+        "seat allotment",
+        "float slide freeze",
+        "iit",
+        "nit",
+        "seat matrix"
+      ],
+      "answer": "JoSAA (Joint Seat Allocation Authority) conducts a unified online centralized counseling process for 118+ institutes of national importance, encompassing 23 IITs, 32 NITs, 26 IIITs, and 33 other Government Funded Technical Institutes (GFTIs). Candidates register and submit their choice preferences in order of priority. JoSAA conducts a mock allocation round followed by 5 to 6 official seat allotment rounds. Upon seat allotment, candidates must complete online reporting: paying the Seat Acceptance Fee (SAF) and uploading documents. Candidates have three key options: 'Freeze' (accept seat and exit counseling), 'Slide' (accept seat but remain open to a higher preference branch within the same institute), or 'Float' (accept seat but remain eligible for an upgrade to higher preference institutes and branches in subsequent rounds). After JoSAA concludes, CSAB (Central Seat Allocation Board) conducts 2 Special Spot Counseling Rounds for remaining vacant seats across the NIT+ system (NITs, IIITs, and GFTIs), offering students another opportunity to secure improved seats based on their JEE Main ranks.",
+      "concise_summary": "JoSAA manages centralized counseling across IITs, NITs, and IIITs with Freeze, Slide, and Float choices across 5-6 rounds. CSAB follows with 2 special spot rounds for vacant NIT+ seats.",
+      "category": "Counseling Process",
+      "hit_count": 178
+    },
+    {
+      "id": "faq_adm_02",
+      "domain": "college_admissions",
+      "language": "en",
+      "question": "What documents are required during physical verification for college admission?",
+      "keywords": [
+        "documents required",
+        "verification",
+        "certificates",
+        "checklist",
+        "reporting",
+        "counseling"
+      ],
+      "answer": "Physical verification requires presenting original documents alongside 3 to 4 self-attested photocopies. The essential checklist includes: 1. Class 10 Certificate and Marksheet (acting as official date of birth proof). 2. Class 12 Certificate and Marksheet (verifying aggregate eligibility and subject prerequisites). 3. Official Entrance Scorecard and Admit Card (JEE Main, JEE Advanced, or MHT-CET). 4. Provisional Seat Allotment Letter and Seat Acceptance Fee payment receipt. 5. Category/Caste Certificate and recent Non-Creamy Layer (NCL) certificate issued after April 1st of the admission year (for OBC-NCL, EWS, SC, ST candidates). 6. State Domicile Certificate. 7. School/College Transfer Certificate (TC) or Leaving Certificate, plus Migration Certificate. 8. Medical Fitness Certificate in the prescribed JoSAA/Institute format signed by a registered medical practitioner. 9. Government Photo Identification (Aadhaar Card or Passport) and 6 recent passport-size photographs identical to those uploaded on the application.",
+      "concise_summary": "You must bring original 10th & 12th marksheets, entrance scorecard & admit card, JoSAA seat allotment letter, category/NCL certificate (dated after April 1st), TC/migration certificate, medical fitness certificate, and Aadhaar card.",
+      "category": "Documentation",
+      "hit_count": 122
+    },
+    {
+      "id": "faq_adm_03",
+      "domain": "college_admissions",
+      "language": "en",
+      "question": "Are there government scholarships available for undergraduate engineering students?",
+      "keywords": [
+        "scholarships",
+        "fee waiver",
+        "nsp",
+        "tfws",
+        "financial aid",
+        "tuition reimbursement",
+        "ews"
+      ],
+      "answer": "Yes, extensive financial aid schemes support engineering undergraduates based on merit and financial need. Key programs include: 1. Tuition Fee Waiver Scheme (TFWS): Allocated via counseling for candidates whose total family annual income is below 8 Lakhs, granting a 100% waiver of tuition fees throughout the 4-year degree. 2. Central Sector Scholarship Scheme via National Scholarship Portal (NSP): Offers direct benefit transfers of Rs. 12,000 to Rs. 20,000 annually for meritorious students in the top 20th percentile of their 12th board. 3. IIT Fee Remission Policy: IITs grant 100% tuition remission for SC, ST, PwD students and general/OBC students with family income under 1 Lakh/year, and a 66% tuition remission for family incomes between 1 and 5 Lakhs/year. 4. State Welfare Portals (such as MahaDBT in Maharashtra or NSP Central): Provide 50% to 100% tuition and exam fee reimbursements for OBC, EWS, SEBC, and SC/ST categories.",
+      "concise_summary": "Key scholarships include TFWS (100% tuition waiver for family income under 8 Lakhs), IIT fee remission policies (up to 100% waiver), NSP central scholarships, and state welfare reimbursements.",
+      "category": "Financial Aid",
+      "hit_count": 95
+    },
+    {
+      "id": "faq_car_01",
+      "domain": "tech_careers",
+      "language": "en",
+      "question": "How should I prepare for product company coding interviews in college?",
+      "keywords": [
+        "coding interview",
+        "dsa",
+        "leetcode",
+        "product company",
+        "prep roadmap",
+        "software engineer",
+        "faang"
+      ],
+      "answer": "Securing a Software Development Engineer (SDE) role at top product companies requires a structured 4-pillar roadmap over 6 to 12 months: Pillar 1: Master Data Structures and Algorithms (DSA). Begin with arrays, strings, two-pointers, and sliding windows, then progress to recursion, binary trees, graphs, heaps, dynamic programming, and tries. Target solving 250 to 350 curated LeetCode problems (e.g. Blind 75, NeetCode 150), prioritizing understanding patterns over memorizing solutions. Pillar 2: Core Computer Science Fundamentals. Deeply study Operating Systems (process scheduling, concurrency, virtual memory), DBMS (SQL queries, indexing, ACID properties, transactions), Computer Networks (TCP/IP handshake, HTTP/HTTPS, DNS), and Object-Oriented Design patterns. Pillar 3: High-Impact Projects. Build 2 end-to-end full-stack or AI projects with deployed live URLs, clean modular code, unit tests, and comprehensive READMEs on GitHub rather than generic clone tutorials. Pillar 4: Mock Interviews & Behavioral Prep. Conduct timed peer mock interviews on platforms like Pramp or Interviewing.io, and prepare structured STAR-format stories (Situation, Task, Action, Result) illustrating leadership, conflict resolution, and technical problem-solving.",
+      "concise_summary": "Follow a 4-pillar roadmap: solve 250+ curated LeetCode DSA patterns, master Core CS (OS, DBMS, Networks, OOP), deploy 2 impressive portfolio projects, and practice timed peer mock interviews.",
+      "category": "Interview Prep",
+      "hit_count": 215
+    },
+    {
+      "id": "faq_car_02",
+      "domain": "tech_careers",
+      "language": "en",
+      "question": "What is the typical interview round sequence for Software Engineering roles?",
+      "keywords": [
+        "interview rounds",
+        "oa",
+        "system design",
+        "technical round",
+        "hiring manager",
+        "sde",
+        "coding test"
+      ],
+      "answer": "Top technology firms and fast-growing startups follow a multi-stage technical evaluation pipeline: Round 1: Online Coding Assessment (OA). Hosted on HackerRank, CodeSignal, or Karat; typically consists of 2 to 3 medium-to-hard algorithmic problems and 10 to 15 CS fundamental MCQs with a strict 70 to 90 minute timer. Round 2: Technical Problem Solving & DSA (1 hour). Live live pair programming with a senior engineer focusing on algorithmic problem formulation, time/space complexity optimization, and edge-case handling. Round 3: Advanced Coding & Low-Level Design (1 hour). Involves designing classes, interfaces, and design patterns (e.g., parking lot system, rate limiter, snake and ladder) or debugging complex real-world data structures. Round 4: High-Level System Design (for experienced or senior campus hires). Architectural discussion covering microservices, load balancing, caching (Redis), relational vs NoSQL databases, message queues (Kafka), and scalability bottlenecks. Round 5: Hiring Manager & Behavioral Fit (45-60 min). Evaluates cultural fit, engineering philosophy, past project trade-offs, and behavioral scenarios under framework methodologies such as Amazon's Leadership Principles.",
+      "concise_summary": "The standard sequence is: 1. Online Coding Assessment (OA), 2. Live DSA Problem Solving, 3. Low-Level Design/Machine Coding, 4. High-Level System Architecture, and 5. Hiring Manager/Cultural Fit round.",
+      "category": "Hiring Pipeline",
+      "hit_count": 147
+    },
+    {
+      "id": "faq_car_03",
+      "domain": "tech_careers",
+      "language": "en",
+      "question": "How can I get employee referrals for top tech firms?",
+      "keywords": [
+        "referrals",
+        "cold message",
+        "linkedin",
+        "tech firms",
+        "networking",
+        "resume review",
+        "job id"
+      ],
+      "answer": "Employee referrals significantly elevate your resume past applicant tracking system (ATS) filters directly to hiring recruiters. To maximize response rates: 1. Identify 2nd or 3rd degree connections on LinkedIn who are currently Software Engineers, Tech Leads, or Engineering Managers at your target company, preferably alumni from your college or past colleagues. 2. Locate the specific open Job ID and link on the company's career page before reaching out. 3. Send a concise, well-structured message (under 120 words): start with a warm greeting, mention your background, highlight 2 quantifiable technical accomplishments directly relevant to the role (e.g., 'built an AI pipeline with 50ms latency' or 'solved 400+ LeetCode problems'), provide the exact Job ID, and attach a clean Google Drive link to your 1-page PDF resume with viewing permissions enabled. Always express genuine appreciation for their time.",
+      "concise_summary": "Find engineers or college alumni on LinkedIn, message them politely with the exact Job ID, highlight 2 quantifiable relevant achievements, and attach a direct link to your 1-page PDF resume.",
+      "category": "Networking",
+      "hit_count": 139
+    },
+    {
+      "id": "faq_cust_01",
+      "domain": "customer_support",
+      "language": "en",
+      "question": "How do I regenerate my production API key and what happens to active tokens?",
+      "keywords": [
+        "api key",
+        "regenerate",
+        "production key",
+        "tokens",
+        "security",
+        "zero downtime",
+        "rotation"
+      ],
+      "answer": "To regenerate your production API key securely without service disruption, log into the Developer Console and navigate to Project Settings > Security > API Keys. When you click 'Rotate Key', our platform initiates a dual-active 24-hour transition window. During this grace period, both your legacy API key and the newly minted key will authenticate requests seamlessly. This gives your DevOps and engineering teams ample time to deploy the updated secret across your CI/CD pipelines, Kubernetes secret managers, and backend configuration environments. Once your services are verified to be communicating using the new credential, you can click 'Revoke Old Key Immediately' or allow the system to automatically invalidate the deprecated key at the expiration of the 24-hour window.",
+      "concise_summary": "Rotate your API key under Settings > API Keys. Both old and new keys remain valid during a 24-hour grace window, ensuring zero downtime while updating your production environments.",
+      "category": "API Management",
+      "hit_count": 82
+    },
+    {
+      "id": "faq_cust_02",
+      "domain": "customer_support",
+      "language": "en",
+      "question": "What are the rate limits on the Voice FAQ Bot API endpoints?",
+      "keywords": [
+        "rate limits",
+        "requests per minute",
+        "429 too many requests",
+        "concurrency",
+        "quotas",
+        "sla"
+      ],
+      "answer": "API rate limits depend on your organization's subscription tier: Developer Starter plans are provisioned with 60 requests per minute (RPM) and up to 5 concurrent WebSocket audio stream connections. Professional tier plans accommodate up to 300 RPM with 25 concurrent voice streaming channels. Enterprise plans feature dedicated multi-region inference clusters supporting 1,500+ RPM, custom burst allowances, and tailored latency Service Level Agreements (SLAs). If an application exceeds its assigned quota, our edge gateway returns an HTTP 429 'Too Many Requests' response accompanied by standard rate limit headers: 'X-RateLimit-Limit', 'X-RateLimit-Remaining', and 'Retry-After' indicating the exact number of seconds before subsequent requests are processed.",
+      "concise_summary": "Developer tier provides 60 RPM with 5 concurrent streams; Pro offers 300 RPM; Enterprise offers 1,500+ RPM. When exceeded, the API returns HTTP 429 with a Retry-After header.",
+      "category": "Rate Limits",
+      "hit_count": 64
+    },
+    {
+      "id": "faq_cust_03",
+      "domain": "customer_support",
+      "language": "en",
+      "question": "Can I configure webhooks for audio transcription and answer events?",
+      "keywords": [
+        "webhooks",
+        "event notifications",
+        "transcription event",
+        "payload",
+        "hmac",
+        "signatures"
+      ],
+      "answer": "Yes, our platform features robust event-driven webhook architecture. In the Developer Dashboard under Webhooks, you can register your HTTPS destination URL and select subscribed events such as 'voice.transcribed', 'faq.matched', 'tts.synthesized', and 'analytics.anomaly'. Every webhook payload is dispatched via HTTPS POST with an ISO 8601 timestamp and an 'X-Signature-256' header containing an HMAC SHA-256 hash generated using your webhook secret key, allowing your backend servers to cryptographically verify payload integrity. If your endpoint responds with an HTTP status other than 200 OK, our delivery worker automatically applies an exponential backoff retry policy across 5 attempts over a 24-hour period.",
+      "concise_summary": "Yes, register your HTTPS endpoint to subscribe to voice.transcribed and faq.matched events. All payloads include HMAC SHA-256 signatures and automated exponential retry delivery.",
+      "category": "Integrations",
+      "hit_count": 51
+    },
+    {
+      "id": "faq_neet_01",
+      "domain": "medical_neet",
+      "language": "en",
+      "question": "What is NEET UG and what is the exam pattern and safe score for government MBBS?",
+      "keywords": [
+        "neet",
+        "neet ug",
+        "mbbs",
+        "medical entrance",
+        "exam pattern",
+        "biology",
+        "physics",
+        "chemistry",
+        "safe score"
+      ],
+      "answer": "NEET UG (National Eligibility cum Entrance Test) is India's single standardized national entrance examination for admissions into undergraduate medical (MBBS), dental (BDS), AYUSH, and veterinary courses across all institutions, including premier centers like AIIMS and JIPMER. The exam consists of 720 total marks across Physics (180 marks), Chemistry (180 marks), and Biology—comprising Botany and Zoology (360 marks). It features 180 questions to be answered out of 200 within a duration of 3 hours and 20 minutes, with +4 marks awarded for correct answers and -1 mark deducted for negative marking. To secure an unreserved/general category government medical college MBBS seat via the 15% All India Quota (AIQ), candidates generally need a competitive score of 620 to 655+ marks out of 720 (roughly top 15,000 All India Rank). Achieving this requires thorough mastery of NCERT Biology textbooks line-by-line, high calculation speed in Physics, and consistent practice with past 15 years' question papers.",
+      "concise_summary": "NEET UG is India's single medical entrance test (720 marks across Bio, Physics, and Chem). A safe score for general category government MBBS is typically 620 to 650+ marks.",
+      "category": "Medical Admissions",
+      "hit_count": 138
+    },
+    {
+      "id": "faq_upsc_01",
+      "domain": "upsc_civil",
+      "language": "en",
+      "question": "How does the UPSC Civil Services Examination work across Prelims, Mains, and Interview?",
+      "keywords": [
+        "upsc",
+        "civil services",
+        "ias",
+        "ips",
+        "prelims",
+        "mains",
+        "interview",
+        "syllabus",
+        "optional subject"
+      ],
+      "answer": "The UPSC Civil Services Examination (CSE) is India's premier nationwide competitive examination conducted annually to recruit officers for the prestigious Indian Administrative Service (IAS), Indian Police Service (IPS), Indian Foreign Service (IFS), and other central Group A services. The selection spans three rigorous stages: Stage 1: Preliminary Examination (Objective screening), featuring General Studies Paper 1 (200 marks; determines merit cutoff) and CSAT Paper 2 (200 marks; qualifying with minimum 33% required). Stage 2: Main Examination (Written descriptive, 1750 marks), consisting of 9 subjective papers: Essay (250 marks), 4 General Studies papers (GS 1 to 4, each 250 marks), and 2 Optional Subject papers (each 250 marks), alongside qualifying English and Indian language papers. Stage 3: Personality Test / Interview (275 marks) conducted in New Delhi before a senior board assessing intellectual integrity, balanced judgment, moral caliber, and leadership under pressure. The final All India Ranking is compiled strictly from the combined aggregate of Mains (1750) and Interview (275) out of 2025 marks.",
+      "concise_summary": "UPSC CSE comprises Stage 1 Prelims (GS & CSAT screening), Stage 2 Mains (1,750 marks across Essay, GS 1-4, & Optional), and Stage 3 Personality Test (275 marks), with final rank calculated out of 2,025 marks.",
+      "category": "Civil Services",
+      "hit_count": 164
+    },
+    {
+      "id": "faq_ai_01",
+      "domain": "universal_ai",
+      "language": "en",
+      "question": "How does an AI voice agent pipeline convert speech to meaning and back to voice?",
+      "keywords": [
+        "ai pipeline",
+        "voice agent",
+        "speech to text",
+        "whisper",
+        "embeddings",
+        "rag",
+        "tts",
+        "retrieval"
+      ],
+      "answer": "A modern chained voice AI architecture operates through a high-speed, synchronized 4-stage pipeline: First, an acoustic encoder like OpenAI Whisper converts the user's analog audio speech stream into normalized text tokens while performing language and acoustic noise filtering. Second, the transcribed query is converted into a high-dimensional mathematical vector (e.g. 384 or 1536 floating-point numbers) capturing its semantic intent. Third, a vector similarity engine like FAISS computes cosine distance against pre-indexed knowledge items in milliseconds to retrieve the closest contextual answers, which an LLM (such as GPT-4o) evaluates and verifies for truthfulness. Finally, an advanced Neural Text-to-Speech (TTS) synthesizer with natural pitch inflection, prosody, and breath simulation streams the audio waveform back to the listener's speaker with end-to-end latencies under 200 milliseconds.",
+      "concise_summary": "Voice AI pipelines convert voice to tokens via Whisper, compute high-dimensional vectors with FAISS for semantic lookup, verify truth with an LLM, and stream natural spoken audio via Neural TTS.",
+      "category": "Universal AI",
+      "hit_count": 192
+    },
+    {
+      "id": "faq_hi_01",
+      "domain": "jee_mhtcet",
+      "language": "hi",
+      "question": "जेईई मेन परीक्षा क्या है और इसकी तैयारी कैसे करें?",
+      "keywords": [
+        "jee",
+        "hindi",
+        "prep",
+        "main",
+        "pariksha",
+        "iit",
+        "nit",
+        "ncert"
+      ],
+      "answer": "जेईई मेन (Joint Entrance Examination Main) भारत के राष्ट्रीय स्तर के प्रतिष्ठित इंजीनियरिंग संस्थानों जैसे NITs, IIITs और CFTIs में स्नातक स्तर पर प्रवेश के लिए आयोजित की जाने वाली प्रमुख परीक्षा है। साथ ही यह परीक्षा जेईई एडवांस्ड (IITs में प्रवेश हेतु) के लिए अनिवार्य स्क्रीनिंग परीक्षा भी है। उत्कृष्ट तैयारी हेतु चार प्रमुख स्तंभ आवश्यक हैं: पहला, भौतिकी, रसायन विज्ञान और गणित के लिए NCERT की पुस्तकों की प्रत्येक अवधारणा को गहराई से समझें। दूसरा, पिछले 10 वर्षों के प्रश्नपत्रों (PYQs) को समयबद्ध तरीके से हल करें ताकि परीक्षा के पैटर्न और कठिनाई स्तर की स्पष्ट समझ हो। तीसरा, प्रत्येक गलत प्रश्न का विस्तृत विश्लेषण करें तथा एक समर्पित 'शॉर्ट नोट्स' और 'फॉर्मूला नोटबुक' तैयार करें। चौथा, नियमित अंतराल पर पूर्ण पाठ्यक्रम के मॉक टेस्ट देकर अपनी गति, सटीकता और समय प्रबंधन में सुधार करें। 99+ पर्सेंटाइल के लिए लगातार 6 से 8 घंटे का गुणवत्तापूर्ण अध्ययन अत्यंत प्रभावी सिद्ध होता है।",
+      "concise_summary": "जेईई मेन एनआईटी और आईआईआईटी में प्रवेश के लिए राष्ट्रीय परीक्षा है। इसकी तैयारी हेतु NCERT का गहन अध्ययन, पिछले 10 वर्षों के प्रश्नपत्रों (PYQs) का अभ्यास, और नियमित मॉक टेस्ट सबसे महत्वपूर्ण हैं।",
+      "category": "परीक्षा विवरण",
+      "hit_count": 73
+    },
+    {
+      "id": "faq_hi_02",
+      "domain": "nda",
+      "language": "hi",
+      "question": "एनडीए (NDA) में चयन के लिए शारीरिक और मानसिक योग्यता क्या होनी चाहिए?",
+      "keywords": [
+        "nda",
+        "hindi",
+        "qualification",
+        "ssb",
+        "yogyata",
+        "army",
+        "navy",
+        "air force"
+      ],
+      "answer": "राष्ट्रीय रक्षा अकादमी (NDA) भारतीय सशस्त्र बलों (थल सेना, नौसेना और वायु सेना) का संयुक्त प्रशिक्षण संस्थान है। चयन प्रक्रिया के लिए मुख्य योग्यताएं इस प्रकार हैं: उम्मीदवार अविवाहित होना चाहिए तथा उसकी आयु 16.5 से 19.5 वर्ष के मध्य होनी चाहिए। शैक्षणिक योग्यता में थल सेना के लिए किसी भी संकाय से 12वीं उत्तीर्ण अथवा अध्ययनरत होना पर्याप्त है, जबकि वायु सेना और नौसेना के लिए भौतिकी और गणित अनिवार्य हैं। मानसिक योग्यता के परीक्षण हेतु यूपीएससी लिखित परीक्षा (900 अंक) के बाद 5 दिवसीय एसएसबी साक्षात्कार (900 अंक) होता है, जिसमें तार्किक क्षमता, त्वरित निर्णय लेने का कौशल, मनोवैज्ञानिक सुदृढ़ता और नेतृत्व क्षमता का मूल्यांकन किया जाता है। शारीरिक दृष्टि से न्यूनतम कद 157 सेमी (महिला उम्मीदवारों के लिए 152 सेमी), सामान्य दृष्टि क्षमता, तथा दौड़, पुश-अप्स और चिन-अप्स की आवश्यक शारीरिक फिटनेस अनिवार्य है।",
+      "concise_summary": "एनडीए के लिए आयु 16.5 से 19.5 वर्ष, 12वीं उत्तीर्ण, 900 अंकों की लिखित परीक्षा, 5 दिवसीय एसएसबी साक्षात्कार, और न्यूनतम 157 सेमी शारीरिक कद आवश्यक है।",
+      "category": "योग्यता",
+      "hit_count": 59
+    },
+    {
+      "id": "faq_mr_01",
+      "domain": "jee_mhtcet",
+      "language": "mr",
+      "question": "एमएचटी-सीईटी (MHT-CET) द्वारे सीओईपी (COEP) किंवा व्हीजेटीआय (VJTI) मध्ये प्रवेश कसा मिळवावा?",
+      "keywords": [
+        "mht cet",
+        "marathi",
+        "coep",
+        "vjti",
+        "admission",
+        "cap rounds",
+        "percentile"
+      ],
+      "answer": "एमएचटी-सीईटी (महाराष्ट्र कॉमन एंट्रन्स टेस्ट) द्वारे पुण्यातील प्रतिष्ठित सीओईपी (COEP Technological University) किंवा मुंबईतील व्हीजेटीआय (VJTI) सारख्या अग्रगण्य स्वायत्त संस्थांमध्ये अभियांत्रिकी शाखेत प्रवेश मिळवण्यासाठी अत्यंत शिस्तबद्ध नियोजन आवश्यक आहे. संगणक (Computer Science) आणि माहिती तंत्रज्ञान (IT) या शाखांसाठी सामान्य प्रवर्गातील विद्यार्थ्यांना किमान 99.4 ते 99.8+ पर्सेंटाईल मिळवणे आवश्यक असते. परीक्षेचा निकाल जाहीर झाल्यानंतर राज्य सीईटी सेलद्वारे केंद्रीभूत प्रवेश प्रक्रिया (CAP Rounds) राबवली जाते. यामध्ये विद्यार्थ्याने कागदपत्रांची पडताळणी (Document Verification) वेळेत पूर्ण करून पसंतीक्रम (Option Form) काळजीपूर्वक भरणे गरजेचे असते. प्रथम फेरीत मिळालेली जागा 'Freeze' करून निश्चित करता येते किंवा उत्तम जागेच्या शोधासाठी 'Betterment' चा पर्याय निवडता येतो.",
+      "concise_summary": "COEP किंवा VJTI मध्ये प्रवेश मिळवण्यासाठी MHT-CET मध्ये 99.5+ पर्सेंटाईल आवश्यक आहेत, त्यानंतर राज्य CET सेलच्या CAP फेऱ्यांद्वारे गुणवत्ता यादीनुसार जागा वाटप होते.",
+      "category": "प्रवेश प्रक्रिया",
+      "hit_count": 88
+    },
+    {
+      "id": "faq_mr_02",
+      "domain": "college_admissions",
+      "language": "mr",
+      "question": "इंजिनिअरिंग प्रवेशासाठी जात प्रमाणपत्र आणि नॉन-क्रिमीलेअरची आवश्यकता काय आहे?",
+      "keywords": [
+        "caste certificate",
+        "marathi",
+        "ncl",
+        "engineering admission",
+        "caste validity"
+      ],
+      "answer": "महाराष्ट्रात अभियांत्रिकी, फार्मसी आणि इतर व्यावसायिक अभ्यासक्रमांच्या आरक्षित जागांचा (OBC, VJ/NT, SBC, SC, ST) लाभ घेण्यासाठी कागदपत्रे अत्यंत अचूक असणे अनिवार्य आहे. आरक्षित प्रवर्गातील विद्यार्थ्यांना सक्षम प्राधिकार्‍याने दिलेले जात प्रमाणपत्र (Caste Certificate) आणि जात पडताळणी प्रमाणपत्र (Caste Validity Certificate) सादर करणे बंधनकारक असते. याशिवाय, SC आणि ST प्रवर्ग वगळता OBC, VJ/NT आणि SBC प्रवर्गातील विद्यार्थ्यांना चालू आर्थिक वर्षातील वैध नॉन-क्रिमीलेअर प्रमाणपत्र (Non-Creamy Layer Certificate - NCL) सादर करणे आवश्यक आहे. हे प्रमाणपत्र विद्यार्थ्याच्या कुटुंबाचे वार्षिक उत्पन्न 8 लाखांच्या आत असल्याचे प्रमाणित करते. आवश्यक कागदपत्रे वेळेत सादर न केल्यास विद्यार्थ्याचा अर्ज आपोआप खुल्या (Open/General) प्रवर्गात वर्ग केला जातो.",
+      "concise_summary": "आरक्षणाचा लाभ मिळवण्यासाठी जात प्रमाणपत्र, जात वैधता प्रमाणपत्र आणि चालू आर्थिक वर्षातील नॉन-क्रिमीलेअर प्रमाणपत्र (NCL) सादर करणे बंधनकारक आहे.",
+      "category": "कागदपत्रे",
+      "hit_count": 62
+    },
+    {
+      "id": "faq_custom_1788610931",
+      "domain": "universal_ai",
+      "language": "en",
+      "question": "What is quantum computing and how does it work?",
+      "keywords": [
+        "what",
+        "quantum",
+        "computing",
+        "does",
+        "work"
+      ],
+      "answer": "Here is a comprehensive breakdown for \"What is quantum computing and how does it work?\": First, in terms of foundational overview: Quantum plays a vital role in its respective domain. It encompasses structured methodologies, standardized eligibility criteria, and key operational benchmarks designed to evaluate and facilitate high-performance outcomes. Second, regarding key requirements and structure: individuals engaging with Quantum must adhere to core prerequisites, maintain consistent timelines, and focus on fundamental conceptual clarity alongside practical application. Third, strategic recommendation: to excel, prioritize structured preparation or implementation, verify all documentation and official guidelines early, and conduct iterative self-assessments to ensure optimal success.",
+      "category": "Auto-Generated & Learned",
+      "hit_count": 0,
+      "concise_summary": "Summary for \"What is quantum computing and how does it work?\": Quantum involves structured criteria and disciplined execution. Focus on core fundamentals, official prerequisites, and consistent practical review."
+    },
+    {
+      "id": "faq_custom_1788611027",
+      "domain": "universal_ai",
+      "language": "en",
+      "question": "What are black holes in astrophysics and how do they form?",
+      "keywords": [
+        "what",
+        "black",
+        "holes",
+        "astrophysics",
+        "they",
+        "form"
+      ],
+      "answer": "Here is a comprehensive breakdown for \"What are black holes in astrophysics and how do they form?\": First, in terms of foundational overview: Black plays a vital role in its respective domain. It encompasses structured methodologies, standardized eligibility criteria, and key operational benchmarks designed to evaluate and facilitate high-performance outcomes. Second, regarding key requirements and structure: individuals engaging with Black must adhere to core prerequisites, maintain consistent timelines, and focus on fundamental conceptual clarity alongside practical application. Third, strategic recommendation: to excel, prioritize structured preparation or implementation, verify all documentation and official guidelines early, and conduct iterative self-assessments to ensure optimal success.",
+      "category": "Auto-Generated & Learned",
+      "hit_count": 0,
+      "concise_summary": "Summary for \"What are black holes in astrophysics and how do they form?\": Black involves structured criteria and disciplined execution. Focus on core fundamentals, official prerequisites, and consistent practical review."
+    }
+  ]
+}

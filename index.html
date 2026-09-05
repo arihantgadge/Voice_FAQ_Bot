@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice FAQ Bot | AI-Powered Voice Question Answering System</title>
+  <meta name="description" content="AI-Powered Voice FAQ Assistant using Whisper Speech-to-Text, FAISS Vector Semantic Search, GPT-4o Mini Brain, and Ultra-Natural Text-to-Speech across College Admissions, JEE, NDA, and Careers.">
+  <meta name="keywords" content="Voice FAQ Bot, AI Voice Assistant, Speech to Text Whisper, FAISS Vector Search, JEE FAQ, NDA Admissions, College Admissions">
+  <meta name="theme-color" content="#050811">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AI Voice FAQ Bot | 2026 Next-Gen Voice QA System">
+  <meta property="og:description" content="Speak naturally and receive intelligent spoken answers in real-time. Powered by Whisper, FAISS, and GPT-4o.">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+</head>
+<body>
+
+  <div class="app-wrapper">
+
+    <!-- ====================================================================
+         NAVIGATION BAR
+         ==================================================================== -->
+    <header>
+      <nav class="navbar" id="mainNavbar" aria-label="Main Navigation">
+        <a href="#" class="brand-logo" id="brandHomeLink">
+          <div class="brand-icon-wrap" aria-hidden="true">🎙️</div>
+          <div class="brand-info">
+            <h1>Voice FAQ Bot <span class="brand-badge">AI STACK 2026</span></h1>
+            <span class="brand-sub">Whisper • FAISS Vectors • GPT-4o Mini • Neural TTS</span>
+          </div>
+        </a>
+
+        <ul class="nav-links" id="navLinksList">
+          <li class="nav-item"><a href="#voiceHeroSection" class="active" id="navLinkAssistant"><span>🎙️</span> Assistant</a></li>
+          <li class="nav-item"><a href="#visualDiagramsSection" id="navLinkDiagrams"><span>🌌</span> Mind Map</a></li>
+          <li class="nav-item"><a href="#faqStudioSection" id="navLinkStudio"><span>📚</span> FAQ Studio</a></li>
+          <li class="nav-item"><a href="#analyticsSection" id="navLinkAnalytics"><span>📊</span> Analytics</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <!-- Multi-language Selector -->
+          <div class="lang-selector" id="langSelector" role="group" aria-label="Language selection">
+            <button class="lang-btn active" data-lang="en" id="langBtnEn" title="English">EN</button>
+            <button class="lang-btn" data-lang="hi" id="langBtnHi" title="हिंदी">हिन्दी</button>
+            <button class="lang-btn" data-lang="mr" id="langBtnMr" title="मराठी">मराठी</button>
+          </div>
+
+          <!-- Stop Bot Button -->
+          <button class="nav-stop-btn" id="navStopBtn" title="Stop AI Voice Bot Immediately (Esc)">
+            <span>⏹️</span> Stop Bot
+          </button>
+
+          <div class="status-pill" id="engineStatusPill">
+            <span class="pulse-dot"></span>
+            <span>AI Ready</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ====================================================================
+           HERO & NEURAL VOICE SPHERE SECTION
+           ==================================================================== -->
+      <section class="hero-section" id="voiceHeroSection" aria-labelledby="heroTitle">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span>⚡</span> Intelligent Voice Intelligence System
+          </div>
+          <h1 class="hero-title" id="heroTitle">
+            Speak Naturally. <br>
+            <span class="gradient-text">Receive Spoken Answers</span> <br>
+            In Real Time.
+          </h1>
+          <p class="hero-desc">
+            Transforming traditional FAQs into an immersive, hands-free conversational voice experience. Powered by high-accuracy speech transcription, sub-millisecond semantic vector search, and expressive human-grade voice synthesis.
+          </p>
+
+          <!-- Domain Filter Strip -->
+          <div class="domain-presets-strip" id="domainPillsContainer">
+            <!-- Dynamically populated via JavaScript -->
+          </div>
+        </div>
+
+        <!-- 3D-Like Neural Voice Orb Visualizer -->
+        <div class="visualizer-container" id="visualizerContainer">
+          <div class="visualizer-halo" aria-hidden="true"></div>
+          <canvas id="voiceOrbCanvas" width="460" height="460" aria-label="Neural Voice Visualizer Canvas"></canvas>
+          <div class="orb-status-overlay" id="orbStatusOverlay">
+            <span class="pulse-dot"></span>
+            <span id="orbStatusText">Mic idle. Click to speak</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           VOICE INTERACTION CONTROL DOCK
+           ==================================================================== -->
+      <section class="voice-dock-card" id="voiceDockSection" aria-label="Voice Interaction Dock">
+        <div class="dock-controls-row">
+          <!-- Animated Mic Button with Ripple Ring & Stop Button -->
+          <div class="mic-btn-wrapper">
+            <button class="mic-btn" id="micBtn" title="Click to Speak (or Press Spacebar)" aria-label="Start Voice Recording">
+              🎙️
+            </button>
+            <div class="mic-ripple-ring" aria-hidden="true"></div>
+            <button class="voice-stop-btn" id="dockStopBtn" title="Stop Bot Immediately (Escape)" aria-label="Stop Speaking">
+              ⏹️ Stop
+            </button>
+          </div>
+
+          <!-- Query Input Bar -->
+          <div class="query-input-box" id="queryInputBox">
+            <input 
+              type="text" 
+              class="query-text-input" 
+              id="queryInput" 
+              placeholder="Ask anything with voice or type question..."
+              aria-label="Ask your question"
+              autocomplete="off"
+            >
+            <button class="ask-submit-btn" id="askSubmitBtn" aria-label="Send Query">
+              <span>Ask Bot</span> ➔
+            </button>
+          </div>
+        </div>
+
+        <!-- Microphone Permission Diagnostic Alert Banner (appears if browser blocks mic) -->
+        <div class="mic-permission-banner" id="micPermissionBanner" style="display: none;" role="alert">
+          <div class="mic-perm-left">
+            <span class="mic-perm-icon">🔒</span>
+            <div>
+              <strong>Microphone Access Notice:</strong>
+              <span>Click the lock / tune icon in your URL address bar, set Microphone to <strong>"Allow"</strong>, then tap the mic button.</span>
+            </div>
+          </div>
+          <button type="button" class="mic-perm-retry-btn" id="micPermRetryBtn">Test Mic Access</button>
+        </div>
+
+        <!-- Live Mic Audio Sound Meter & Live Transcribing Indicator -->
+        <div class="mic-live-feedback" id="micLiveFeedback" style="display: none; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span class="mic-live-label" id="micLiveText">🔴 Listening Live... Speak Now</span>
+            <div class="mic-live-meter" id="micLiveMeter">
+              <div class="mic-meter-bar"></div>
+              <div class="mic-meter-bar"></div>
+              <div class="mic-meter-bar"></div>
+              <div class="mic-meter-bar"></div>
+              <div class="mic-meter-bar"></div>
+              <div class="mic-meter-bar"></div>
+              <div class="mic-meter-bar"></div>
+              <div class="mic-meter-bar"></div>
+            </div>
+          </div>
+          <span style="font-size: 0.76rem; color: var(--cyan-core); font-family: var(--font-mono);" id="micDecibelText">Audio Stream Active</span>
+        </div>
+
+        <!-- Answer Depth Selection Mode (Comprehensive vs Quick) -->
+        <div class="answer-mode-row" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em;">Answer Depth:</span>
+            <div class="mode-toggle-group" id="answerModeToggleGroup" role="group" aria-label="Answer Depth">
+              <button class="mode-toggle-btn active" data-mode="detailed" id="modeDetailedBtn">
+                <span>🌟</span> Detailed & In-Depth
+              </button>
+              <button class="mode-toggle-btn" data-mode="concise" id="modeConciseBtn">
+                <span>⚡</span> Quick Summary
+              </button>
+            </div>
+          </div>
+          <span style="font-size: 0.78rem; color: var(--cyan-core); font-family: var(--font-mono);">
+            💡 In-Depth provides comprehensive explanations & recommendations
+          </span>
+        </div>
+
+        <!-- Quick Voice Preset Chips -->
+        <div class="preset-chips-container" id="presetChipsContainer" aria-label="Quick Question Presets">
+          <!-- Dynamically populated via JavaScript -->
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           DYNAMIC ANSWER & VOICE PLAYBACK SPOTLIGHT
+           ==================================================================== -->
+      <article class="answer-spotlight" id="answerSpotlight" aria-live="polite">
+        <div class="answer-header">
+          <div class="answer-query-title">
+            <span style="font-size: 1.4rem;">💬</span>
+            <span id="spotlightQueryText">"What is JEE and what is the difference between JEE Main and Advanced?"</span>
+          </div>
+          <div class="confidence-badge" id="spotlightConfidence">
+            ✓ 96.4% Match (Semantic Vector)
+          </div>
+        </div>
+
+        <!-- Mode switcher for Spotlight -->
+        <div class="spotlight-mode-switcher" id="spotlightModeSwitcher">
+          <button class="spotlight-tab-btn active" id="tabDetailedBtn">📖 Detailed Spoken Explanation</button>
+          <button class="spotlight-tab-btn" id="tabConciseBtn">⚡ Quick Summary</button>
+        </div>
+
+        <div class="answer-body" id="spotlightAnswerText">
+          JEE (Joint Entrance Examination) is India's premier engineering entrance exam...
+        </div>
+
+        <div class="answer-audio-bar" id="answerAudioBar">
+          <div class="audio-controls-left">
+            <button class="audio-play-btn" id="spotlightPlayBtn" title="Replay Voice Audio" aria-label="Play Answer Audio">
+              ▶
+            </button>
+            <button class="audio-stop-btn" id="spotlightStopBtn" title="Stop Speaking (Escape)" aria-label="Stop Speaking">
+              ⏹️
+            </button>
+            <div class="equalizer-bars" id="equalizerBars" aria-hidden="true">
+              <div class="eq-bar"></div>
+              <div class="eq-bar"></div>
+              <div class="eq-bar"></div>
+              <div class="eq-bar"></div>
+              <div class="eq-bar"></div>
+            </div>
+            <span class="audio-meta-text" id="audioMetaText">Voice: Nova (Neural Studio) | Latency: 54ms</span>
+          </div>
+          <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">
+            Press <kbd style="background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px;">Space</kbd> to Ask Next
+          </div>
+        </div>
+      </article>
+
+      <!-- ====================================================================
+           INTERACTIVE DOMAIN GALAXY & QUESTION MIND MAP
+           ==================================================================== -->
+      <section class="section-container" id="visualDiagramsSection" aria-labelledby="diagramsHeading">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <h2 id="diagramsHeading"><span>🗺️</span> Interactive Knowledge Galaxy & Mind Map</h2>
+            <p class="section-subtitle">Visually explore all question domains and tap any node or question satellite to ask instantly</p>
+          </div>
+          <span class="brand-badge">INTERACTIVE NAVIGATOR</span>
+        </div>
+
+        <div class="interactive-diagram-card">
+          <div style="margin-bottom: 20px;">
+            <div style="font-size: 1.15rem; font-weight: 700; display: flex; align-items: center; gap: 8px;">
+              <span>🌐</span> Universal Domain Mind Map & Instant Question Navigator
+            </div>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 4px;">
+              Click any question below or in the animated neural constellation diagram to ask immediately, hear the natural spoken voice, and watch the AI answer!
+            </p>
+          </div>
+
+          <!-- Interactive SVG Neural Knowledge Constellation Mind Map -->
+          <div class="constellation-wrap" id="constellationWrap">
+            <div class="constellation-badge-bar">
+              <span class="constellation-title">🌌 Neural Knowledge Constellation (Live Interactive Mind Map)</span>
+              <div class="constellation-pills">
+                <span class="c-pill" style="--cp-color: #00F2FE;">⚡ JEE</span>
+                <span class="c-pill" style="--cp-color: #FF7A00;">🎖️ NDA</span>
+                <span class="c-pill" style="--cp-color: #06D6A0;">🩺 NEET</span>
+                <span class="c-pill" style="--cp-color: #E76F51;">🏛️ UPSC</span>
+                <span class="c-pill" style="--cp-color: #00F5A0;">💼 Tech</span>
+                <span class="c-pill" style="--cp-color: #9D4EDD;">🎓 College</span>
+                <span class="c-pill" style="--cp-color: #FF007A;">🎧 APIs</span>
+                <span class="c-pill" style="--cp-color: #3A86FF;">🌐 Auto-Learn</span>
+              </div>
+            </div>
+            <div class="constellation-svg-container" id="constellationSvgContainer">
+              <!-- Dynamically populated interactive SVG network graph -->
+            </div>
+          </div>
+
+          <div class="domain-galaxy-grid" id="domainGalaxyGrid">
+            <!-- Dynamically populated via JavaScript for all 8 domains with clickable question nodes -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           FAQ KNOWLEDGE BASE STUDIO
+           ==================================================================== -->
+      <section class="section-container" id="faqStudioSection" aria-labelledby="studioHeading">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <h2 id="studioHeading"><span>📚</span> FAQ Knowledge Studio</h2>
+            <p class="section-subtitle">Explore curated FAQs across Admissions, JEE, NDA, Careers, and SaaS support or add your own</p>
+          </div>
+          <span class="brand-badge" id="totalFaqBadge">20 Total</span>
+        </div>
+
+        <div class="faq-studio-card" id="faqStudioCard">
+          <div class="studio-toolbar">
+            <div class="studio-search-wrap">
+              <span class="studio-search-icon" aria-hidden="true">🔍</span>
+              <input 
+                type="text" 
+                class="studio-search-input" 
+                id="faqSearchInput" 
+                placeholder="Search questions, keywords, or answers..."
+                aria-label="Search FAQs"
+              >
+            </div>
+
+            <div class="studio-actions-right">
+              <button class="action-btn" id="openIngestModalBtn">
+                <span>📁</span> Ingest Document / CSV
+              </button>
+              <button class="action-btn primary" id="openAddFaqModalBtn">
+                <span>+</span> Add New FAQ
+              </button>
+            </div>
+          </div>
+
+          <!-- FAQ Cards Grid -->
+          <div class="faq-grid" id="faqGrid" aria-label="FAQ Knowledge Grid">
+            <!-- Dynamically populated via JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           REAL-TIME TELEMETRY & ANALYTICS DASHBOARD
+           ==================================================================== -->
+      <section class="section-container" id="analyticsSection" aria-labelledby="analyticsHeading">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <h2 id="analyticsHeading"><span>📊</span> Real-Time Analytics & Telemetry</h2>
+            <p class="section-subtitle">Live operational metrics, latency percentiles, and popular queries across voice interactions</p>
+          </div>
+          <span class="brand-badge">REAL-TIME</span>
+        </div>
+
+        <!-- 4 Hero KPI Cards -->
+        <div class="analytics-metrics-grid" id="analyticsMetricsGrid">
+          <div class="metric-card">
+            <div>
+              <div class="metric-title">Total Voice Queries</div>
+              <div class="metric-value" id="metricTotalQueries">1,420</div>
+              <div class="metric-badge">▲ +18.4% today</div>
+            </div>
+            <div class="metric-icon-wrap">🎙️</div>
+          </div>
+
+          <div class="metric-card">
+            <div>
+              <div class="metric-title">Average Latency</div>
+              <div class="metric-value" id="metricAvgLatency">68.4ms</div>
+              <div class="metric-badge">⚡ Sub-100ms SLA</div>
+            </div>
+            <div class="metric-icon-wrap">⏱️</div>
+          </div>
+
+          <div class="metric-card">
+            <div>
+              <div class="metric-title">Match Accuracy</div>
+              <div class="metric-value" id="metricAccuracy">96.8%</div>
+              <div class="metric-badge">✓ FAISS Verified</div>
+            </div>
+            <div class="metric-icon-wrap">🎯</div>
+          </div>
+
+          <div class="metric-card">
+            <div>
+              <div class="metric-title">Knowledge Items</div>
+              <div class="metric-value" id="metricKnowledgeItems">20</div>
+              <div class="metric-badge">Across 5 Domains</div>
+            </div>
+            <div class="metric-icon-wrap">🧠</div>
+          </div>
+        </div>
+
+        <!-- Detail Split: Live Feed + Leaderboard -->
+        <div class="analytics-detail-split">
+          <div class="analytics-card">
+            <div class="card-heading">
+              <span>⚡ Live Query Stream Feed</span>
+              <span class="brand-badge">LATEST 20</span>
+            </div>
+            <div class="live-stream-list" id="liveStreamList">
+              <!-- Dynamically populated via JavaScript -->
+            </div>
+          </div>
+
+          <div class="analytics-card">
+            <div class="card-heading">
+              <span>🔥 Most Asked Questions</span>
+              <span class="brand-badge">POPULAR</span>
+            </div>
+            <div class="leaderboard-list" id="leaderboardList">
+              <!-- Dynamically populated via JavaScript -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           VOICE & AUDIO SETTINGS DOCK
+           ==================================================================== -->
+      <section class="section-container" id="voiceSettingsSection" aria-labelledby="settingsHeading">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <h2 id="settingsHeading"><span>⚙️</span> Voice & Synthesis Configuration</h2>
+            <p class="section-subtitle">Customize voice timbre, playback speech rate, and audio feedback characteristics</p>
+          </div>
+        </div>
+
+        <div class="faq-studio-card" style="padding: 24px;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; align-items: center;">
+            <div>
+              <label class="form-label" for="voiceSelect">AI Voice Timbre & Model</label>
+              <select class="form-select" id="voiceSelect">
+                <!-- Dynamically populated from OS/Browser installed voices & presets -->
+              </select>
+              <div style="display: flex; gap: 8px; margin-top: 10px;">
+                <button type="button" class="gender-btn active" data-gender="female" id="genderFemaleBtn">
+                  👩 Female Voice (High Pitch)
+                </button>
+                <button type="button" class="gender-btn" data-gender="male" id="genderMaleBtn">
+                  👨 Male Voice (Deep Pitch)
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                <label class="form-label" for="speedSlider" style="margin-bottom: 0;">Speech Rate</label>
+                <span style="font-family: var(--font-mono); color: var(--cyan-core); font-size: 0.85rem;" id="speedVal">1.00x</span>
+              </div>
+              <input type="range" id="speedSlider" min="0.75" max="1.5" step="0.05" value="1.0" style="width: 100%; accent-color: var(--cyan-core);">
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 16px; margin-top: 14px;">
+              <button class="action-btn" id="testVoiceBtn" style="flex-grow: 1;">
+                <span>🔊</span> Test Voice Persona
+              </button>
+              <label style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; cursor: pointer;">
+                <input type="checkbox" id="sfxToggle" checked style="accent-color: var(--cyan-core);">
+                <span>Sci-Fi SFX</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====================================================================
+         MODALS: ADD FAQ & INGEST DOCUMENT
+         ==================================================================== -->
+    <!-- Add FAQ Modal -->
+    <div class="modal-overlay" id="addFaqModal" role="dialog" aria-modal="true" aria-labelledby="addModalTitle">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h3 id="addModalTitle"><span>+</span> Add Custom FAQ</h3>
+          <button class="modal-close-btn" id="closeAddFaqModalBtn" aria-label="Close modal">&times;</button>
+        </div>
+        <form id="addFaqForm">
+          <div class="form-group">
+            <label class="form-label" for="newFaqDomain">Domain Category</label>
+            <select class="form-select" id="newFaqDomain" required>
+              <option value="jee_mhtcet">⚡ JEE & MHT-CET</option>
+              <option value="nda">🎖️ NDA & Defence</option>
+              <option value="college_admissions" selected>🎓 College Admissions</option>
+              <option value="tech_careers">💼 Companies & Careers</option>
+              <option value="customer_support">🎧 Customer & SaaS Support</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="newFaqQuestion">Question</label>
+            <input type="text" class="form-input" id="newFaqQuestion" placeholder="e.g. What is the fee waiver criteria for EWS?" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="newFaqKeywords">Keywords (comma separated)</label>
+            <input type="text" class="form-input" id="newFaqKeywords" placeholder="e.g. ews, fee waiver, income limit">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="newFaqAnswer">Answer</label>
+            <textarea class="form-textarea" id="newFaqAnswer" placeholder="Detailed spoken answer text..." required></textarea>
+          </div>
+          <button type="submit" class="action-btn primary" style="width: 100%; justify-content: center;">
+            Save & Embed into FAISS Index ➔
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Ingest Document Modal -->
+    <div class="modal-overlay" id="ingestModal" role="dialog" aria-modal="true" aria-labelledby="ingestModalTitle">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h3 id="ingestModalTitle"><span>📁</span> Ingest Document / CSV / JSON</h3>
+          <button class="modal-close-btn" id="closeIngestModalBtn" aria-label="Close modal">&times;</button>
+        </div>
+        <form id="ingestForm">
+          <div class="form-group">
+            <label class="form-label" for="ingestDomain">Target Domain</label>
+            <select class="form-select" id="ingestDomain">
+              <option value="college_admissions">🎓 College Admissions</option>
+              <option value="jee_mhtcet">⚡ JEE & MHT-CET</option>
+              <option value="nda">🎖️ NDA & Defence</option>
+              <option value="tech_careers">💼 Companies & Careers</option>
+              <option value="customer_support">🎧 Customer & SaaS Support</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="ingestFormat">Format</label>
+            <select class="form-select" id="ingestFormat">
+              <option value="text">Text (Q: ... A: ... lines)</option>
+              <option value="csv">CSV (Question, Answer)</option>
+              <option value="json">JSON Array or Key-Value</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="ingestContent">Paste Content or Q&A pairs</label>
+            <textarea class="form-textarea" id="ingestContent" placeholder="Q: What is the age limit for NDA?&#10;A: 16.5 to 19.5 years." required></textarea>
+          </div>
+          <button type="submit" class="action-btn primary" style="width: 100%; justify-content: center;">
+            Parse & Extract FAQs ➔
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+    <!-- ====================================================================
+         FOOTER
+         ==================================================================== -->
+    <footer class="footer">
+      <div class="footer-credits">
+        <strong>Voice FAQ Bot</strong> — AI-Powered Voice Question Answering System. Built as per <a href="specs.md" style="color: var(--cyan-core); text-decoration: none;">specs.md</a>.
+      </div>
+      <div>
+        <span>Speech-to-Text ➔ FAISS Vector DB ➔ GPT-4o Mini ➔ Neural TTS</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Main JavaScript Application -->
+  <script src="static/js/app.js"></script>
+</body>
+</html>
